@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-import style from './App.css';
+import classNames from 'classnames/bind';
+import styles from './App.scss';
+const cx = classNames.bind(styles);
 
-console.log(style);
+console.log(styles);
 
 class App extends Component {
   render() {
+
+    const isBlue = true;
+
     return (
-      <div className={style.box}>
+      <div className={cx('box',{
+        blue: isBlue
+      })}>
+
+      <div className={cx('box-inside')}/>
 
 
       </div>
