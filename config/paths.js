@@ -52,5 +52,5 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
-  styles: resolveApp('src/styles'), //추가 부분
+  styles: resolveApp('src/styles'), //추가부분
 };
